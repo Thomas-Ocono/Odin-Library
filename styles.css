@@ -1,3 +1,65 @@
-h1 {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: bisque;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#title {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: 10px solid burlywood;
+  border-radius: 2rem;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.booksContainer {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.book {
+  background-color: rgb(177, 97, 23);
+  width: 15rem;
+  height: 18rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  filter: drop-shadow(0px 5px 5px black);
+}
+.bookTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+.bookAuthor {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.bookPages {
+  font-size: 1.2rem;
+}
+.bookRead {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+.bookReadText {
+  font-size: 1.2rem;
+}
+.bookReadBtn {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  width: 3rem;
+  border-radius: 0.5rem;
 }
