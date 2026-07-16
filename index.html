@@ -10,33 +10,52 @@
 <body>
 
     <h1 id='title'>My Library</h1>
-
-    <div class="booksContainer">
-        <div class="book">
+    <button id="addBtn">Add Book</button>
+        <div class="inputWindow" id="inputWindow">
+        <h2>Adding a book</h2>
+        <div class="inputRow">
+            <h2>Name: </h2>
+            <input type="text" required id="addTitle"/>
+        </div>
+        <div class="inputRow">
+            <h2>Author: </h2>
+            <input type="text" required id="addAuthor"/>
+        </div>
+        <div class="inputRow">
+            <h2>Pages: </h2>
+            <input type="number" required id="addPages"/>
+        </div>
+        <button id="addBookBtn">Add Book</button>
+    </div>
+    <div class="booksContainer" id="booksDiv">
+        <div class="book" id="1">
             <h2 class="bookTitle">Lord of the Rings</h2>
             <h2 class="bookAuthor">Author: J.R.R. Tolkien</h2>
             <h2 class="bookPages">Pages: 1077</h2>
             <div class="bookRead">
                 <h2>Read: </h2>
                 <button class="bookReadBtn">Yes</button>
+                <button class="bookRemove">Remove</button>
             </div>
         </div>
-        <div class="book">
+        <div class="book" id="2">
             <h2 class="bookTitle">Dune</h2>
             <h2 class="bookAuthor">Author: Frank Herbert</h2>
             <h2 class="bookPages">Pages: 412</h2>
             <div class="bookRead">
                 <h2>Read: </h2>
                 <button class="bookReadBtn">Yes</button>
+                <button class="bookRemove">Remove</button>
             </div>
         </div>
-        <div class="book">
+        <div class="book" id="3">
             <h2 class="bookTitle">A Tale of Two Cities</h2>
             <h2 class="bookAuthor">Author: Charles Dickens</h2>
             <h2 class="bookPages">Pages: 428</h2>
             <div class="bookRead">
                 <h2>Read: </h2>
                 <button class="bookReadBtn">No</button>
+                <button class="bookRemove">Remove</button>
             </div>
         </div>
         
